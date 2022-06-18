@@ -7,7 +7,6 @@ import {
   Stack,
   VisuallyHidden,
   Heading,
-  Button,
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaWhatsapp, FaFacebook } from 'react-icons/fa';
 
