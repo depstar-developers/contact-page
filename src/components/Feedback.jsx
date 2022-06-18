@@ -32,6 +32,8 @@ const Feedback = () => {
   }
   return (
     <Box
+      zIndex={10}
+      position={{ md: 'absolute' }}
       width={{ base: '100%', md: '22em', lg: '32em' }}
       height={{ base: '100%', md: '22em', lg: '40em' }}
       borderRadius={'2em'}

@@ -7,6 +7,7 @@ import {
   Stack,
   VisuallyHidden,
   Heading,
+  Button,
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaWhatsapp, FaFacebook } from 'react-icons/fa';
 
@@ -55,7 +56,7 @@ const Footer = () => {
             <Link href={'#'}>Pricing</Link>
             <Link href={'#'}>Testimonials</Link>
           </Stack>
-          <Stack spacing={6} align={'flex-end'} paddingY={'2em'}>
+          <Stack spacing={6} align={'flex-end'} paddingTop={'20%'}>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Whatsapp'} href={'#'}>
                 <FaWhatsapp size={{ base: '3em', md: '3em' }} />

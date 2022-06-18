@@ -13,14 +13,7 @@ function Contact() {
       backgroundSize={'cover'}
       backgroundRepeat='no-repeat'
       justifyContent={'space-between'}>
-      <Container
-        as={SimpleGrid}
-        columns={{ base: 1, md: 2 }}
-        minWidth={'100%'}
-
-        // spacing={{ base: 10, lg: 32 }}
-        // py={{ base: 10, sm: 20, lg: 32 }}
-      >
+      <Container as={SimpleGrid} columns={{ base: 1, md: 2 }} minWidth={'100%'}>
         <Box
           alignSelf={'self-end'}
           justifySelf={{ base: 'center' }}
@@ -35,6 +28,7 @@ function Contact() {
 
         <Box
           paddingBottom={{ base: '4%' }}
+          paddingTop={{ md: '6%' }}
           justifySelf={{ base: 'center' }}
           minW={'100%'}>
           <Feedback />
