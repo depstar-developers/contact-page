@@ -51,11 +51,9 @@ const Footer = () => {
             </Heading>
             <Link href={'#'}>About us</Link>
             <Link href={'#'}>Buying</Link>
-            <Link href={'#'}>Selling</Link>
             <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Testimonials</Link>
           </Stack>
-          <Stack spacing={6} align={'flex-end'} paddingTop={'20%'}>
+          <Stack spacing={6} align={'flex-end'} paddingTop={'20%'} marginBottom={{base: '8%'}}>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Whatsapp'} href={'#'}>
                 <FaWhatsapp size={{ base: '3em', md: '3em' }} />
