@@ -32,18 +32,22 @@ const Feedback = () => {
   }
   return (
     <Box
-      width={'32em'}
-      height={'40em'}
+      width={{ base: '100%', md: '22em', lg: '32em' }}
+      height={{ base: '100%', md: '22em', lg: '40em' }}
       borderRadius={'2em'}
       color={'black'}
-      padding={'2em'}
+      paddingY={{ base: '0', md: '2em' }}
       backgroundColor={'white'}>
-      <Heading as={'h3'} fontSize={'1.6em'} align='left' marginBottom={'1.6em'}>
+      <Heading
+        as={'h3'}
+        fontSize={'1.6em'}
+        textAlign={'center'}
+        paddingTop={'1em'}>
         Feedback Form
       </Heading>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormControl isInvalid={errors}>
-          <Grid templateRows='repeat(5, 1fr)' gap={4}>
+          <Grid templateRows='repeat(5, 1fr)' gap={4} marginX={{ base: '1em' }}>
             <GridItem>
               <Input
                 fontSize={'1em'}
@@ -109,7 +113,7 @@ const Feedback = () => {
               />
               <FormErrorMessage>{errors.msg?.message}</FormErrorMessage>
             </GridItem>
-            <GridItem textAlign={'center'}>
+            <GridItem textAlign={'center'} maxHeight={{ base: '1em' }}>
               <Button
                 bgColor={'#000000'}
                 color={'gray.100'}

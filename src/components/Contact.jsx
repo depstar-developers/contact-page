@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, SimpleGrid } from '@chakra-ui/react';
 import Feedback from './Feedback';
 
 function Contact() {
@@ -6,21 +6,40 @@ function Contact() {
     <Flex
       className='Contact'
       backgroundImage="url('/dark-city-bg.jpg')"
-      width={'100%'}
-      height={'80vh'}
-      paddingX={'4em'}
-      paddingTop={'2em'}
+      width={{ base: '100%', lg: '100%' }}
+      height={{ base: '100vh', lg: '78vh' }}
+      paddingX={{ base: '2%', md: '2em', lg: '4em' }}
+      paddingTop={{ md: '1em', lg: '0.4em' }}
       backgroundSize={'cover'}
       backgroundRepeat='no-repeat'
       justifyContent={'space-between'}>
-      <Box alignSelf={'self-end'} marginStart={'16em'} paddingBottom={'2em'}>
-        <Heading fontSize={{ sm: '2em', md: '3em', lg: '4em' }} color={'white'}>
-          Contact Us
-        </Heading>
-      </Box>
-      <Box>
-        <Feedback />
-      </Box>
+      <Container
+        as={SimpleGrid}
+        columns={{ base: 1, md: 2 }}
+        minWidth={'100%'}
+
+        // spacing={{ base: 10, lg: 32 }}
+        // py={{ base: 10, sm: 20, lg: 32 }}
+      >
+        <Box
+          alignSelf={'self-end'}
+          justifySelf={{ base: 'center' }}
+          marginStart={{ base: '0', sm: '2%', md: '2%', lg: '8%' }}
+          paddingBottom={{ base: '2em', lg: '4em' }}>
+          <Heading
+            fontSize={{ base: '3em', md: '6em', lg: '4em' }}
+            color={'white'}>
+            Contact Us
+          </Heading>
+        </Box>
+
+        <Box
+          paddingBottom={{ base: '4%' }}
+          justifySelf={{ base: 'center' }}
+          minW={'100%'}>
+          <Feedback />
+        </Box>
+      </Container>
     </Flex>
   );
 }
